@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/back"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="FORGOT YOUR PASSWORD"
+        android:textSize="25dp"
+        android:textColor="#453"
+        android:textStyle="bold"
+        android:id="@+id/text" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:text="Step1-Enter your Security Question answer\nStep2-Click Submit Button"
+        android:textSize="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/securityques"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:id="@+id/submit"
+        android:layout_gravity="right"
+        android:layout_below="@+id/securityans"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:hint="Enter Answer of Security Question"
+        android:textSize="20dp"
+        android:id="@+id/securityans"
+        android:layout_below="@+id/securityques"
+        android:layout_alignLeft="@+id/securityques"
+        android:layout_alignStart="@+id/securityques" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:hint="password"
+       android:textStyle="bold"
+        android:textColor="#a22"
+        android:id="@+id/yourpassword"
+        android:layout_below="@+id/submit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp" />
+
+
+
+</RelativeLayout><!-- From: file:/C:/Users/HP/AndroidStudioProjects/rec/app/src/main/res/layout/settings_main.xml -->
